@@ -1,0 +1,19 @@
+<p>
+  animation-practice-1 works!
+</p>
+<hr>
+
+<div class="row">
+  <div class="col-md-offset-2 col-md-3">
+    <div [@flyInOut]="state" (@flyInOut.done)="animationDone()" class="form-group" *ngIf="showUserName"   >
+      <label for="">User Name</label>
+      <input type="text" class="form-control" placeholder="User name..." (keyup)="onKeyUp($event)"   >
+    </div>
+
+    <div [@flyInOut]="state" class="form-group" *ngIf="showPassword"  >
+      <label for="">Password</label>
+      <input type="text" class="form-control" placeholder="Password...">
+    </div>
+  </div>
+
+</div>
