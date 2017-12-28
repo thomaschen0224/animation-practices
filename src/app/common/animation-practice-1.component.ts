@@ -8,8 +8,8 @@ import { trigger, state, style, animate, transition } from "@angular/animations"
   styleUrls: ['./animation-practice-1.component.css'],
   animations: [trigger('flyInOut', [
     state('in', style({width: '*'})),        
-    transition('void => *', [style({width: '0'}), animate(1000)]),
-    transition('* => void', [style({width: '*'}), animate(1000,style({width:'0'}))])
+    transition('void => *', [style({width: '0'}), animate(500)]),
+    transition('* => void', animate(100,style({transform:'translateX(100%)'})))
   ])]
 })
 export class AnimationPractice1Component implements OnInit {
