@@ -7,12 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AnimationPractice1Component } from './common/animation-practice-1.component';
 import { PersonService } from './common/person.service';
+import { SpinPracticeComponent } from './common/spin-practice.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    AnimationPractice1Component
+    AnimationPractice1Component,
+    SpinPracticeComponent
   ],
   imports: [
     BrowserModule,
